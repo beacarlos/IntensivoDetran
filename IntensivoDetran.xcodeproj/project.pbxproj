@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
+		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
+		77E6D42125CAD34A00E8221D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42025CAD34A00E8221D /* ViewController.swift */; };
+		77E6D42425CAD34A00E8221D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42225CAD34A00E8221D /* Main.storyboard */; };
+		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
+		77E6D42925CAD34B00E8221D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42825CAD34B00E8221D /* Assets.xcassets */; };
+		77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */; };
+		77E6D43725CAD34B00E8221D /* IntensivoDetranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D43625CAD34B00E8221D /* IntensivoDetranTests.swift */; };
+		77E6D44225CAD34B00E8221D /* IntensivoDetranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D44125CAD34B00E8221D /* IntensivoDetranUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77E6D43325CAD34B00E8221D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77E6D41125CAD34A00E8221D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E6D41825CAD34A00E8221D;
+			remoteInfo = IntensivoDetran;
+		};
+		77E6D43E25CAD34B00E8221D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77E6D41125CAD34A00E8221D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E6D41825CAD34A00E8221D;
+			remoteInfo = IntensivoDetran;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		77E6D42025CAD34A00E8221D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77E6D42325CAD34A00E8221D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77E6D42625CAD34A00E8221D /* IntensivoDetran.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntensivoDetran.xcdatamodel; sourceTree = "<group>"; };
+		77E6D42825CAD34B00E8221D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77E6D42B25CAD34B00E8221D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77E6D42D25CAD34B00E8221D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E6D43225CAD34B00E8221D /* IntensivoDetranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntensivoDetranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E6D43625CAD34B00E8221D /* IntensivoDetranTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensivoDetranTests.swift; sourceTree = "<group>"; };
+		77E6D43825CAD34B00E8221D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E6D43D25CAD34B00E8221D /* IntensivoDetranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntensivoDetranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E6D44125CAD34B00E8221D /* IntensivoDetranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensivoDetranUITests.swift; sourceTree = "<group>"; };
+		77E6D44325CAD34B00E8221D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77E6D41625CAD34A00E8221D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D42F25CAD34B00E8221D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D43A25CAD34B00E8221D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77E6D41025CAD34A00E8221D = {
+			isa = PBXGroup;
+			children = (
+				77E6D41B25CAD34A00E8221D /* IntensivoDetran */,
+				77E6D43525CAD34B00E8221D /* IntensivoDetranTests */,
+				77E6D44025CAD34B00E8221D /* IntensivoDetranUITests */,
+				77E6D41A25CAD34A00E8221D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77E6D41A25CAD34A00E8221D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D41925CAD34A00E8221D /* IntensivoDetran.app */,
+				77E6D43225CAD34B00E8221D /* IntensivoDetranTests.xctest */,
+				77E6D43D25CAD34B00E8221D /* IntensivoDetranUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D41C25CAD34A00E8221D /* AppDelegate.swift */,
+				77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */,
+				77E6D42025CAD34A00E8221D /* ViewController.swift */,
+				77E6D42225CAD34A00E8221D /* Main.storyboard */,
+				77E6D42825CAD34B00E8221D /* Assets.xcassets */,
+				77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */,
+				77E6D42D25CAD34B00E8221D /* Info.plist */,
+				77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */,
+			);
+			path = IntensivoDetran;
+			sourceTree = "<group>";
+		};
+		77E6D43525CAD34B00E8221D /* IntensivoDetranTests */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D43625CAD34B00E8221D /* IntensivoDetranTests.swift */,
+				77E6D43825CAD34B00E8221D /* Info.plist */,
+			);
+			path = IntensivoDetranTests;
+			sourceTree = "<group>";
+		};
+		77E6D44025CAD34B00E8221D /* IntensivoDetranUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D44125CAD34B00E8221D /* IntensivoDetranUITests.swift */,
+				77E6D44325CAD34B00E8221D /* Info.plist */,
+			);
+			path = IntensivoDetranUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77E6D41825CAD34A00E8221D /* IntensivoDetran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E6D44625CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetran" */;
+			buildPhases = (
+				77E6D41525CAD34A00E8221D /* Sources */,
+				77E6D41625CAD34A00E8221D /* Frameworks */,
+				77E6D41725CAD34A00E8221D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntensivoDetran;
+			productName = IntensivoDetran;
+			productReference = 77E6D41925CAD34A00E8221D /* IntensivoDetran.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77E6D43125CAD34B00E8221D /* IntensivoDetranTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E6D44925CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranTests" */;
+			buildPhases = (
+				77E6D42E25CAD34B00E8221D /* Sources */,
+				77E6D42F25CAD34B00E8221D /* Frameworks */,
+				77E6D43025CAD34B00E8221D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E6D43425CAD34B00E8221D /* PBXTargetDependency */,
+			);
+			name = IntensivoDetranTests;
+			productName = IntensivoDetranTests;
+			productReference = 77E6D43225CAD34B00E8221D /* IntensivoDetranTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77E6D43C25CAD34B00E8221D /* IntensivoDetranUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E6D44C25CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranUITests" */;
+			buildPhases = (
+				77E6D43925CAD34B00E8221D /* Sources */,
+				77E6D43A25CAD34B00E8221D /* Frameworks */,
+				77E6D43B25CAD34B00E8221D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E6D43F25CAD34B00E8221D /* PBXTargetDependency */,
+			);
+			name = IntensivoDetranUITests;
+			productName = IntensivoDetranUITests;
+			productReference = 77E6D43D25CAD34B00E8221D /* IntensivoDetranUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77E6D41125CAD34A00E8221D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					77E6D41825CAD34A00E8221D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					77E6D43125CAD34B00E8221D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 77E6D41825CAD34A00E8221D;
+					};
+					77E6D43C25CAD34B00E8221D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 77E6D41825CAD34A00E8221D;
+					};
+				};
+			};
+			buildConfigurationList = 77E6D41425CAD34A00E8221D /* Build configuration list for PBXProject "IntensivoDetran" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77E6D41025CAD34A00E8221D;
+			productRefGroup = 77E6D41A25CAD34A00E8221D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77E6D41825CAD34A00E8221D /* IntensivoDetran */,
+				77E6D43125CAD34B00E8221D /* IntensivoDetranTests */,
+				77E6D43C25CAD34B00E8221D /* IntensivoDetranUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77E6D41725CAD34A00E8221D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */,
+				77E6D42925CAD34B00E8221D /* Assets.xcassets in Resources */,
+				77E6D42425CAD34A00E8221D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D43025CAD34B00E8221D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D43B25CAD34B00E8221D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77E6D41525CAD34A00E8221D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E6D42125CAD34A00E8221D /* ViewController.swift in Sources */,
+				77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */,
+				77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */,
+				77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D42E25CAD34B00E8221D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E6D43725CAD34B00E8221D /* IntensivoDetranTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E6D43925CAD34B00E8221D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E6D44225CAD34B00E8221D /* IntensivoDetranUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77E6D43425CAD34B00E8221D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77E6D41825CAD34A00E8221D /* IntensivoDetran */;
+			targetProxy = 77E6D43325CAD34B00E8221D /* PBXContainerItemProxy */;
+		};
+		77E6D43F25CAD34B00E8221D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77E6D41825CAD34A00E8221D /* IntensivoDetran */;
+			targetProxy = 77E6D43E25CAD34B00E8221D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77E6D42225CAD34A00E8221D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77E6D42325CAD34A00E8221D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77E6D42B25CAD34B00E8221D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77E6D44425CAD34B00E8221D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77E6D44525CAD34B00E8221D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77E6D44725CAD34B00E8221D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetran/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77E6D44825CAD34B00E8221D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetran/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77E6D44A25CAD34B00E8221D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetranTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntensivoDetran.app/IntensivoDetran";
+			};
+			name = Debug;
+		};
+		77E6D44B25CAD34B00E8221D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetranTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntensivoDetran.app/IntensivoDetran";
+			};
+			name = Release;
+		};
+		77E6D44D25CAD34B00E8221D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetranUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntensivoDetran;
+			};
+			name = Debug;
+		};
+		77E6D44E25CAD34B00E8221D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VH525588L5;
+				INFOPLIST_FILE = IntensivoDetranUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beatrizcarlos.dev.IntensivoDetranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IntensivoDetran;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77E6D41425CAD34A00E8221D /* Build configuration list for PBXProject "IntensivoDetran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E6D44425CAD34B00E8221D /* Debug */,
+				77E6D44525CAD34B00E8221D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E6D44625CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E6D44725CAD34B00E8221D /* Debug */,
+				77E6D44825CAD34B00E8221D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E6D44925CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E6D44A25CAD34B00E8221D /* Debug */,
+				77E6D44B25CAD34B00E8221D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E6D44C25CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E6D44D25CAD34B00E8221D /* Debug */,
+				77E6D44E25CAD34B00E8221D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77E6D42625CAD34A00E8221D /* IntensivoDetran.xcdatamodel */,
+			);
+			currentVersion = 77E6D42625CAD34A00E8221D /* IntensivoDetran.xcdatamodel */;
+			path = IntensivoDetran.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 77E6D41125CAD34A00E8221D /* Project object */;
+}
