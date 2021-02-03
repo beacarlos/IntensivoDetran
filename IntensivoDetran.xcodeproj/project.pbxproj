@@ -10,7 +10,6 @@
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
 		77E6D42125CAD34A00E8221D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42025CAD34A00E8221D /* ViewController.swift */; };
-		77E6D42425CAD34A00E8221D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42225CAD34A00E8221D /* Main.storyboard */; };
 		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
 		77E6D42925CAD34B00E8221D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42825CAD34B00E8221D /* Assets.xcassets */; };
 		77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		77E6D42025CAD34A00E8221D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77E6D42325CAD34A00E8221D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77E6D42625CAD34A00E8221D /* IntensivoDetran.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntensivoDetran.xcdatamodel; sourceTree = "<group>"; };
 		77E6D42825CAD34B00E8221D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77E6D42B25CAD34B00E8221D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,12 +102,10 @@
 		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
 			isa = PBXGroup;
 			children = (
-				77E6D41C25CAD34A00E8221D /* AppDelegate.swift */,
-				77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */,
-				77E6D42025CAD34A00E8221D /* ViewController.swift */,
-				77E6D42225CAD34A00E8221D /* Main.storyboard */,
-				77E6D42825CAD34B00E8221D /* Assets.xcassets */,
-				77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */,
+				77E6D46125CAD8EB00E8221D /* App */,
+				77E6D46025CAD8E300E8221D /* Controller */,
+				77E6D45F25CAD8DE00E8221D /* View */,
+				77E6D45E25CAD8D100E8221D /* Model */,
 				77E6D42D25CAD34B00E8221D /* Info.plist */,
 				77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */,
 			);
@@ -134,6 +130,39 @@
 			path = IntensivoDetranUITests;
 			sourceTree = "<group>";
 		};
+		77E6D45E25CAD8D100E8221D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77E6D45F25CAD8DE00E8221D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77E6D46025CAD8E300E8221D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D42025CAD34A00E8221D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77E6D46125CAD8EB00E8221D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77E6D41C25CAD34A00E8221D /* AppDelegate.swift */,
+				77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */,
+				77E6D42825CAD34B00E8221D /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +173,7 @@
 				77E6D41525CAD34A00E8221D /* Sources */,
 				77E6D41625CAD34A00E8221D /* Frameworks */,
 				77E6D41725CAD34A00E8221D /* Resources */,
+				77E6D45725CAD82500E8221D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -240,7 +270,6 @@
 				77E6D45325CAD7B500E8221D /* .swiftlint.yml in Resources */,
 				77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */,
 				77E6D42925CAD34B00E8221D /* Assets.xcassets in Resources */,
-				77E6D42425CAD34A00E8221D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +288,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77E6D45725CAD82500E8221D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77E6D41525CAD34A00E8221D /* Sources */ = {
@@ -304,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		77E6D42225CAD34A00E8221D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77E6D42325CAD34A00E8221D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
