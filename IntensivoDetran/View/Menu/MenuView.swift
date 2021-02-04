@@ -59,6 +59,27 @@ class MenuView: UIView {
         return view
     }()
     
+    lazy var titleDescriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "A prova teórica do Detran"
+        label.textAlignment = .left
+        label.textColor = UIColor(red: 0.07, green: 0.08, blue: 0.08, alpha: 1.00)
+        label.font = UIFont(name: "Cuprum-Bold", size: 20)
+        return label
+    }()
+    
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Essa tem um total de 40 \nquestões e a pontuação é de \na 10 pontos."
+        label.textAlignment = .left
+        label.numberOfLines = 3
+        label.textColor = .colorCaption
+        label.font = .systemFont(ofSize: 18)
+        return label
+    }()
+    
     lazy var buttonSimuleted: UIButton = {
         let button = UIButton()
         button.setTitle("    Começar um simulado", for: .normal)
@@ -108,6 +129,18 @@ class MenuView: UIView {
             self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 35),
             self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
             self.viewDescription.heightAnchor.constraint(equalToConstant: 165)
+        ])
+        
+        self.viewDescription.addSubview(titleDescriptionLabel)
+        NSLayoutConstraint.activate([
+            self.titleDescriptionLabel.topAnchor.constraint(equalTo: self.viewDescription.topAnchor, constant: 35),
+            self.titleDescriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -15)
+        ])
+        
+        self.viewDescription.addSubview(descriptionLabel)
+        NSLayoutConstraint.activate([
+            self.descriptionLabel.topAnchor.constraint(equalTo: self.titleDescriptionLabel.bottomAnchor, constant: 6),
+            self.descriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
     }
 }
