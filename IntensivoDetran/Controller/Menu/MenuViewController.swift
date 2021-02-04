@@ -8,6 +8,10 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     var menuView: MenuView = {
         let view = MenuView(frame: UIScreen.main.bounds)
         return view
