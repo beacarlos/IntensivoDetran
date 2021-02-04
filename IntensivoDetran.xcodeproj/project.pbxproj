@@ -78,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7756D88D25CC3CFA00FB6D6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		77E6D41025CAD34A00E8221D = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +112,7 @@
 				77E6D46125CAD8EB00E8221D /* App */,
 				77E6D46025CAD8E300E8221D /* Controller */,
 				77E6D45F25CAD8DE00E8221D /* View */,
+				7756D88D25CC3CFA00FB6D6B /* ViewModel */,
 				77E6D45E25CAD8D100E8221D /* Model */,
 				77E6D42D25CAD34B00E8221D /* Info.plist */,
 				77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */,
