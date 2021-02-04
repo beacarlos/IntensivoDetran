@@ -39,6 +39,14 @@
 /* Begin PBXFileReference section */
 		7756D89325CC3D7800FB6D6B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		7756D89825CC3DC200FB6D6B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7756D8A025CC3F2300FB6D6B /* Cuprum-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Bold.ttf"; sourceTree = "<group>"; };
+		7756D8A125CC3F2300FB6D6B /* Cuprum-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7756D8A225CC3F2300FB6D6B /* Cuprum-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Medium.ttf"; sourceTree = "<group>"; };
+		7756D8A325CC3F2300FB6D6B /* Cuprum-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7756D8A425CC3F2300FB6D6B /* Cuprum-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-SemiBold.ttf"; sourceTree = "<group>"; };
+		7756D8A525CC3F2300FB6D6B /* Cuprum-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Regular.ttf"; sourceTree = "<group>"; };
+		7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Italic.ttf"; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +111,37 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		7756D89D25CC3E9000FB6D6B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7756D89E25CC3EC100FB6D6B /* Fonts */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		7756D89E25CC3EC100FB6D6B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7756D89F25CC3EF900FB6D6B /* Cuprum */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7756D89F25CC3EF900FB6D6B /* Cuprum */ = {
+			isa = PBXGroup;
+			children = (
+				7756D8A025CC3F2300FB6D6B /* Cuprum-Bold.ttf */,
+				7756D8A325CC3F2300FB6D6B /* Cuprum-BoldItalic.ttf */,
+				7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */,
+				7756D8A225CC3F2300FB6D6B /* Cuprum-Medium.ttf */,
+				7756D8A125CC3F2300FB6D6B /* Cuprum-MediumItalic.ttf */,
+				7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */,
+				7756D8A425CC3F2300FB6D6B /* Cuprum-SemiBold.ttf */,
+				7756D8A525CC3F2300FB6D6B /* Cuprum-SemiBoldItalic.ttf */,
+			);
+			path = Cuprum;
+			sourceTree = "<group>";
+		};
 		77E6D41025CAD34A00E8221D = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +166,7 @@
 		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
 			isa = PBXGroup;
 			children = (
+				7756D89D25CC3E9000FB6D6B /* Supporting files */,
 				77E6D46125CAD8EB00E8221D /* App */,
 				77E6D46025CAD8E300E8221D /* Controller */,
 				77E6D45F25CAD8DE00E8221D /* View */,
