@@ -28,6 +28,7 @@ class MenuView: UIView {
         view.backgroundColor = .colorPrimary
         view.clipsToBounds = true
         view.layer.cornerRadius = 11
+        view.alpha = 1
         view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         return view
     }()
@@ -38,6 +39,7 @@ class MenuView: UIView {
         label.text = "Pronto para começar?"
         label.textAlignment = .center
         label.textColor = .whiteColor
+        label.alpha = 1
         label.font = UIFont(name: "Cuprum-Bold", size: 28)
         return label
     }()
@@ -47,6 +49,7 @@ class MenuView: UIView {
         imageView.image = UIImage(named: "img_menu")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
+        imageView.alpha = 1
         return imageView
     }()
     
@@ -56,6 +59,7 @@ class MenuView: UIView {
         view.backgroundColor = .colorPrimaryLight
         view.clipsToBounds = true
         view.layer.cornerRadius = 6
+        view.alpha = 1
         return view
     }()
     
@@ -66,6 +70,7 @@ class MenuView: UIView {
         label.textAlignment = .left
         label.textColor = UIColor(red: 0.07, green: 0.08, blue: 0.08, alpha: 1.00)
         label.font = UIFont(name: "Cuprum-Bold", size: 20)
+        label.alpha = 1
         return label
     }()
     

@@ -39,12 +39,15 @@ class MenuViewController: UIViewController {
             self.menuView.imageViewTop.alpha = 0
             self.menuView.viewTop.alpha = 0
             self.menuView.buttonSimuleted.alpha = 0
-        },
-        completion: { _ in
-            UIView.animate(withDuration: 0.6) {
-                let simulatedController = SimulatedViewController()
-                self.navigationController?.pushViewController(simulatedController, animated: true)
-            }
+        }, completion: { _ in
+            let newViewController = SimulatedViewController()
+            self.navigationController?.pushViewController(newViewController, animated: true)
         })
+    }
+    
+    func nukeAllAnimations() {
+        self.view.subviews.forEach({$0.layer.removeAllAnimations()})
+        self.view.layer.removeAllAnimations()
+        self.view.layoutIfNeeded()
     }
 }

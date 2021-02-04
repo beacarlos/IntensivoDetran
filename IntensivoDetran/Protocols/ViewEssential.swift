@@ -7,6 +7,8 @@
 
 import UIKit
 
+//swiftlint:disable redundant_void_return
+
 protocol ViewEssential {
     func setupUI() -> Void
     func setupConstraints() -> Void
