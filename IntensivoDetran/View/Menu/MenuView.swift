@@ -72,7 +72,7 @@ class MenuView: UIView {
     lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Essa tem um total de 40 \nquestões e a pontuação é de \na 10 pontos."
+        label.text = "Ela tem um total de 40 \nquestões e a pontuação é de \n0 a 10 pontos. Bons estudos!"
         label.textAlignment = .left
         label.numberOfLines = 3
         label.textColor = .colorCaption

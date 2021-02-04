@@ -18,6 +18,8 @@
 		7756D8B125CC3FE800FB6D6B /* Cuprum-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A125CC3F2300FB6D6B /* Cuprum-MediumItalic.ttf */; };
 		7756D8B225CC3FE800FB6D6B /* Cuprum-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */; };
 		7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D8BA25CC4C3F00FB6D6B /* Colors.swift */; };
+		776A753425CC96AE00124B7E /* SimulatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A753325CC96AE00124B7E /* SimulatedView.swift */; };
+		776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A753B25CC96BD00124B7E /* SimulatedViewController.swift */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
 		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
@@ -57,6 +59,8 @@
 		7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Regular.ttf"; sourceTree = "<group>"; };
 		7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Italic.ttf"; sourceTree = "<group>"; };
 		7756D8BA25CC4C3F00FB6D6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		776A753325CC96AE00124B7E /* SimulatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedView.swift; sourceTree = "<group>"; };
+		776A753B25CC96BD00124B7E /* SimulatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedViewController.swift; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,22 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		776A753125CC967900124B7E /* Simulated */ = {
+			isa = PBXGroup;
+			children = (
+				776A753325CC96AE00124B7E /* SimulatedView.swift */,
+			);
+			path = Simulated;
+			sourceTree = "<group>";
+		};
+		776A753225CC969B00124B7E /* Simulated */ = {
+			isa = PBXGroup;
+			children = (
+				776A753B25CC96BD00124B7E /* SimulatedViewController.swift */,
+			);
+			path = Simulated;
+			sourceTree = "<group>";
+		};
 		77E6D41025CAD34A00E8221D = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +243,7 @@
 		77E6D45F25CAD8DE00E8221D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				776A753125CC967900124B7E /* Simulated */,
 				7756D88E25CC3D4D00FB6D6B /* Menu */,
 				77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */,
 			);
@@ -232,6 +253,7 @@
 		77E6D46025CAD8E300E8221D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				776A753225CC969B00124B7E /* Simulated */,
 				7756D88F25CC3D5E00FB6D6B /* Menu */,
 			);
 			path = Controller;
@@ -413,7 +435,9 @@
 				7756D89925CC3DC200FB6D6B /* MenuViewController.swift in Sources */,
 				7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */,
 				77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */,
+				776A753425CC96AE00124B7E /* SimulatedView.swift in Sources */,
 				77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */,
+				776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
