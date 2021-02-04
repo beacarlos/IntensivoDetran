@@ -17,6 +17,7 @@
 		7756D8B025CC3FE800FB6D6B /* Cuprum-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */; };
 		7756D8B125CC3FE800FB6D6B /* Cuprum-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A125CC3F2300FB6D6B /* Cuprum-MediumItalic.ttf */; };
 		7756D8B225CC3FE800FB6D6B /* Cuprum-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */; };
+		7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D8BA25CC4C3F00FB6D6B /* Colors.swift */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
 		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 		7756D8A525CC3F2300FB6D6B /* Cuprum-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Regular.ttf"; sourceTree = "<group>"; };
 		7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Italic.ttf"; sourceTree = "<group>"; };
+		7756D8BA25CC4C3F00FB6D6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			path = Cuprum;
 			sourceTree = "<group>";
 		};
+		7756D8B925CC4C2000FB6D6B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7756D8BA25CC4C3F00FB6D6B /* Colors.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		77E6D41025CAD34A00E8221D = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +184,6 @@
 		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
 			isa = PBXGroup;
 			children = (
-				7756D89D25CC3E9000FB6D6B /* Supporting files */,
 				77E6D46125CAD8EB00E8221D /* App */,
 				77E6D46025CAD8E300E8221D /* Controller */,
 				77E6D45F25CAD8DE00E8221D /* View */,
@@ -233,6 +242,8 @@
 			children = (
 				77E6D41C25CAD34A00E8221D /* AppDelegate.swift */,
 				77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */,
+				7756D8B925CC4C2000FB6D6B /* Core */,
+				7756D89D25CC3E9000FB6D6B /* Supporting files */,
 				77E6D42825CAD34B00E8221D /* Assets.xcassets */,
 			);
 			path = App;
@@ -398,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */,
+				7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */,
 				7756D89925CC3DC200FB6D6B /* MenuViewController.swift in Sources */,
 				7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */,
 				77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */,
