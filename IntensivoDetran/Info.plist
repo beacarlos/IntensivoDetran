@@ -51,6 +51,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Cuprum-Bold.ttf</string>
+		<string>Cuprum-BoldItalic.ttf</string>
+		<string>Cuprum-Italic.ttf</string>
+		<string>Cuprum-Medium.ttf</string>
+		<string>Cuprum-Regular.ttf</string>
+		<string>Cuprum-SemiBold.ttf</string>
+		<string>Cuprum-SemiBoldItalic.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

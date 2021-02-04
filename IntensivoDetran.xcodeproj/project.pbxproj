@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D89325CC3D7800FB6D6B /* MenuView.swift */; };
 		7756D89925CC3DC200FB6D6B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D89825CC3DC200FB6D6B /* MenuViewController.swift */; };
+		7756D8A825CC3FD000FB6D6B /* Cuprum-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A025CC3F2300FB6D6B /* Cuprum-Bold.ttf */; };
+		7756D8AC25CC3FE800FB6D6B /* Cuprum-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A525CC3F2300FB6D6B /* Cuprum-SemiBoldItalic.ttf */; };
+		7756D8AD25CC3FE800FB6D6B /* Cuprum-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A425CC3F2300FB6D6B /* Cuprum-SemiBold.ttf */; };
+		7756D8AE25CC3FE800FB6D6B /* Cuprum-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A325CC3F2300FB6D6B /* Cuprum-BoldItalic.ttf */; };
+		7756D8AF25CC3FE800FB6D6B /* Cuprum-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A225CC3F2300FB6D6B /* Cuprum-Medium.ttf */; };
+		7756D8B025CC3FE800FB6D6B /* Cuprum-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */; };
+		7756D8B125CC3FE800FB6D6B /* Cuprum-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A125CC3F2300FB6D6B /* Cuprum-MediumItalic.ttf */; };
+		7756D8B225CC3FE800FB6D6B /* Cuprum-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A725CC3F2300FB6D6B /* Cuprum-Italic.ttf */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
 		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
@@ -334,9 +342,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7756D8B025CC3FE800FB6D6B /* Cuprum-Regular.ttf in Resources */,
 				77E6D45325CAD7B500E8221D /* .swiftlint.yml in Resources */,
+				7756D8A825CC3FD000FB6D6B /* Cuprum-Bold.ttf in Resources */,
 				77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */,
+				7756D8AD25CC3FE800FB6D6B /* Cuprum-SemiBold.ttf in Resources */,
 				77E6D42925CAD34B00E8221D /* Assets.xcassets in Resources */,
+				7756D8B225CC3FE800FB6D6B /* Cuprum-Italic.ttf in Resources */,
+				7756D8AE25CC3FE800FB6D6B /* Cuprum-BoldItalic.ttf in Resources */,
+				7756D8B125CC3FE800FB6D6B /* Cuprum-MediumItalic.ttf in Resources */,
+				7756D8AC25CC3FE800FB6D6B /* Cuprum-SemiBoldItalic.ttf in Resources */,
+				7756D8AF25CC3FE800FB6D6B /* Cuprum-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
