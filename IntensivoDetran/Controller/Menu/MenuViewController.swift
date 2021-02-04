@@ -14,7 +14,7 @@ class MenuViewController: UIViewController {
     
     var menuView: MenuView = {
         let view = MenuView(frame: UIScreen.main.bounds)
-        view.buttonSimuleted.addTarget(self, action: #selector(buttonSimuletedAction), for: .touchUpInside)
+        view.buttonSimulated.addTarget(self, action: #selector(buttonSimulatedAction), for: .touchUpInside)
         return view
     }()
     
@@ -30,7 +30,7 @@ class MenuViewController: UIViewController {
     
     private func setupUI() {}
     
-    @objc func buttonSimuletedAction(sender: UIButton) {
+    @objc func buttonSimulatedAction(sender: UIButton) {
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
             self.menuView.descriptionLabel.alpha = 0
             self.menuView.titleDescriptionLabel.alpha = 0
@@ -38,7 +38,7 @@ class MenuViewController: UIViewController {
             self.menuView.titleLabel.alpha = 0
             self.menuView.imageViewTop.alpha = 0
             self.menuView.viewTop.alpha = 0
-            self.menuView.buttonSimuleted.alpha = 0
+            self.menuView.buttonSimulated.alpha = 0
         }, completion: { _ in
             let newViewController = SimulatedViewController()
             self.navigationController?.pushViewController(newViewController, animated: true)

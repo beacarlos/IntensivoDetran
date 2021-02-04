@@ -85,7 +85,7 @@ class MenuView: UIView {
         return label
     }()
     
-    lazy var buttonSimuleted: UIButton = {
+    lazy var buttonSimulated: UIButton = {
         let button = UIButton()
         button.setTitle("    Começar um simulado", for: .normal)
         button.setTitleColor(.colorCaption, for: .normal)
@@ -122,15 +122,15 @@ class MenuView: UIView {
             self.imageViewTop.bottomAnchor.constraint(equalTo: self.viewTop.bottomAnchor, constant: -20)
         ])
         
-        self.addSubview(buttonSimuleted)
+        self.addSubview(buttonSimulated)
         NSLayoutConstraint.activate([
-            self.buttonSimuleted.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -30),
-            self.buttonSimuleted.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            self.buttonSimulated.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            self.buttonSimulated.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         
         self.addSubview(viewDescription)
         NSLayoutConstraint.activate([
-            self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonSimuleted.topAnchor, constant: -60),
+            self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonSimulated.topAnchor, constant: -60),
             self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 35),
             self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
             self.viewDescription.heightAnchor.constraint(equalToConstant: 165)
