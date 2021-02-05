@@ -28,9 +28,20 @@ class MenuViewController: UIViewController {
         self.view = menuView
     }
     
+    // defazer
+    // fazer
+    
     private func setupUI() {}
     
     @objc func buttonSimulatedAction(sender: UIButton) {
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.4
+        pulse.fromValue = 0.98
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.initialVelocity = 0.5
+        pulse.damping = 1.0
+        
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
             self.menuView.descriptionLabel.alpha = 0
             self.menuView.titleDescriptionLabel.alpha = 0
@@ -45,9 +56,20 @@ class MenuViewController: UIViewController {
         })
     }
     
-    func nukeAllAnimations() {
-        self.view.subviews.forEach({$0.layer.removeAllAnimations()})
-        self.view.layer.removeAllAnimations()
-        self.view.layoutIfNeeded()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIView.animate(withDuration: 0.8, delay: 0, options: .curveEaseIn, animations: {
+            self.menuView.descriptionLabel.alpha = 1
+            self.menuView.titleDescriptionLabel.alpha = 1
+            self.menuView.viewDescription.alpha = 1
+            self.menuView.titleLabel.alpha = 1
+            self.menuView.imageViewTop.alpha = 1
+            self.menuView.viewTop.alpha = 1
+            self.menuView.buttonSimulated.alpha = 1
+        })
+    }
+    
+    func pulsate() {
+        
     }
 }

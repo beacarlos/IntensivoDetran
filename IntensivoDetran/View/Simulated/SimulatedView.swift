@@ -50,6 +50,64 @@ class SimulatedView: UIView, ViewEssential {
         return button
     }()
     
+    lazy var questionTitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Questão 1"
+        label.textAlignment = .center
+        label.textColor = UIColor(red: 0.44, green: 0.49, blue: 0.56, alpha: 1.00)
+        label.font = UIFont(name: "Cuprum-Bold", size: 15)
+        return label
+    }()
+    
+    lazy var questionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Interromper o funcionamento do motor sem justa razão (deixar o veículo “morrer”), após o início da prova, é falta: "
+        label.textAlignment = .left
+        label.textColor = .darkText
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.frame.size.width = 300
+        label.font = UIFont.systemFont(ofSize: 20)
+        return label
+    }()
+    
+    lazy var collectionSimulated: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout(sectionInset: UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0), scrollDirection: .vertical, minimumInteritemSpacing: 0, minimumLineSpacing: 0, itemSize: CGSize(width: UIScreen.main.bounds.width, height: 10)))
+        collectionView.register(SimulatedCollectionViewCell.self, forCellWithReuseIdentifier: "SimulatedCollectionViewCell")
+        collectionView.backgroundColor = .whiteColor
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
+    }()
+    
+    lazy var buttonNext: UIButton = {
+        let button = UIButton()
+        button.setTitle("Próxima", for: .normal)
+        button.setTitleColor(.whiteColor, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        button.backgroundColor = .actionColor
+        button.layer.cornerRadius = 13
+        button.contentEdgeInsets = UIEdgeInsets(top: 15, left: 22, bottom: 15, right: 22)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    private func collectionViewLayout(sectionInset: UIEdgeInsets, scrollDirection: UICollectionView.ScrollDirection, minimumInteritemSpacing: CGFloat = 0, minimumLineSpacing: CGFloat = 0, itemSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)) -> UICollectionViewLayout {
+        let layout = UICollectionViewFlowLayout()
+        
+        layout.sectionInset = sectionInset
+        layout.scrollDirection = scrollDirection
+        layout.minimumInteritemSpacing = minimumInteritemSpacing
+        layout.minimumLineSpacing = minimumLineSpacing
+//        layout.itemSize = itemSize
+        layout.estimatedItemSize = itemSize
+        
+        return layout
+    }
+    
     func setupUI() {
         self.backgroundColor = .whiteColor
         setupConstraints()
@@ -74,6 +132,32 @@ class SimulatedView: UIView, ViewEssential {
         NSLayoutConstraint.activate([
             stopButton.centerYAnchor.constraint(equalTo: self.progressBar.centerYAnchor, constant: -2),
             stopButton.leadingAnchor.constraint(equalTo: self.progressBar.trailingAnchor, constant: 15)
+        ])
+        
+        self.addSubview(questionTitleLabel)
+        NSLayoutConstraint.activate([
+            questionTitleLabel.topAnchor.constraint(equalTo: self.progressBar.bottomAnchor, constant: 50),
+            questionTitleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ])
+        
+        self.addSubview(questionLabel)
+        NSLayoutConstraint.activate([
+            questionLabel.topAnchor.constraint(equalTo: self.questionTitleLabel.bottomAnchor, constant: 16),
+            questionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            questionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
+        ])
+        
+        self.addSubview(buttonNext)
+        NSLayoutConstraint.activate([
+            buttonNext.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            buttonNext.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ])
+        
+        self.addSubview(collectionSimulated)
+        NSLayoutConstraint.activate([
+            collectionSimulated.topAnchor.constraint(equalTo: self.questionLabel.bottomAnchor, constant: 30),
+            collectionSimulated.widthAnchor.constraint(equalTo: self.widthAnchor),
+            collectionSimulated.bottomAnchor.constraint(equalTo: self.buttonNext.topAnchor, constant: -30)
         ])
     }
 }
