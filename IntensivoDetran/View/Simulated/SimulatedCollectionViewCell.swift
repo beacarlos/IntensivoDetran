@@ -10,6 +10,7 @@ import UIKit
 class SimulatedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = .purple
     }
     
     required init?(coder: NSCoder) {

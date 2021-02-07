@@ -102,8 +102,8 @@ class SimulatedView: UIView, ViewEssential {
         layout.scrollDirection = scrollDirection
         layout.minimumInteritemSpacing = minimumInteritemSpacing
         layout.minimumLineSpacing = minimumLineSpacing
-//        layout.itemSize = itemSize
-        layout.estimatedItemSize = itemSize
+        layout.itemSize = itemSize
+//        layout.estimatedItemSize = itemSize
         
         return layout
     }
