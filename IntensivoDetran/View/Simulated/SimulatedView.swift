@@ -74,7 +74,7 @@ class SimulatedView: UIView, ViewEssential {
     }()
     
     lazy var collectionSimulated: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout(sectionInset: UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0), scrollDirection: .vertical, minimumInteritemSpacing: 0, minimumLineSpacing: 0, itemSize: CGSize(width: UIScreen.main.bounds.width, height: 10)))
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout(sectionInset: UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10), scrollDirection: .vertical, minimumInteritemSpacing: 0, minimumLineSpacing: 0, itemSize: CGSize(width: UIScreen.main.bounds.width - 30, height: 120)))
         collectionView.register(SimulatedCollectionViewCell.self, forCellWithReuseIdentifier: "SimulatedCollectionViewCell")
         collectionView.backgroundColor = .whiteColor
         collectionView.showsVerticalScrollIndicator = false
