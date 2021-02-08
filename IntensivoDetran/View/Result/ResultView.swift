@@ -91,7 +91,7 @@ class ResultView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Você tem que tirar uma \npontuação igual ou maior que \n7, ou seja, tem que acertar no \nmínimo 28 questões!"
         label.textAlignment = .left
-        label.numberOfLines = 3
+        label.numberOfLines = 4
         label.textColor = .colorCaption
         label.font = .systemFont(ofSize: 18)
         return label
@@ -161,15 +161,15 @@ class ResultView: UIView {
         self.addSubview(viewDescription)
         NSLayoutConstraint.activate([
             self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonBackToMenu.topAnchor, constant: -60),
-            self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 35),
-            self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
-            self.viewDescription.heightAnchor.constraint(equalToConstant: 165)
+            self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 34),
+            self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -34),
+            self.viewDescription.heightAnchor.constraint(equalToConstant: 170)
         ])
         
         self.viewDescription.addSubview(titleDescriptionLabel)
         NSLayoutConstraint.activate([
             self.titleDescriptionLabel.topAnchor.constraint(equalTo: self.viewDescription.topAnchor, constant: 35),
-            self.titleDescriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -15)
+            self.titleDescriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -25)
         ])
         
         self.viewDescription.addSubview(descriptionLabel)
