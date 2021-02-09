@@ -103,7 +103,6 @@ class SimulatedView: UIView, ViewEssential {
         layout.minimumInteritemSpacing = minimumInteritemSpacing
         layout.minimumLineSpacing = minimumLineSpacing
         layout.itemSize = itemSize
-//        layout.estimatedItemSize = itemSize
         
         return layout
     }
