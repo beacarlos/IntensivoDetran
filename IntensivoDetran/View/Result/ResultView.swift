@@ -27,6 +27,20 @@ class ResultView: UIView {
         return label
     }()
     
+    lazy var circularProgressView: CircularProgressBar = {
+        let cBar = CircularProgressBar(frame: CGRect(x: 0, y: -10, width: 220, height: 220))
+        cBar.trackColor = UIColor(red: 0.94, green: 0.94, blue: 0.94, alpha: 1.00)
+        cBar.progressColor = .colorPrimary
+        cBar.tag = 101
+        cBar.center = CGPoint(x: self.frame.width / 2, y: self.frame.height * 0.28)
+        self.perform(#selector(animateProgress), with: nil, afterDelay: 0.5)
+        return cBar
+    }()
+    
+    @objc func animateProgress() {
+        self.circularProgressView.setProgressWithAnimation(duration: 1.0, value: 0.7)
+    }
+    
     lazy var viewCircle: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -126,9 +140,11 @@ class ResultView: UIView {
             titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30)
         ])
         
+        self.addSubview(circularProgressView)
+        
         self.addSubview(viewCircle)
         NSLayoutConstraint.activate([
-            viewCircle.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 30),
+            viewCircle.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 45),
             viewCircle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             viewCircle.widthAnchor.constraint(equalToConstant: 200),
             viewCircle.heightAnchor.constraint(equalToConstant: 200)
@@ -148,13 +164,13 @@ class ResultView: UIView {
         
         self.addSubview(scoreTextSubLabel)
         NSLayoutConstraint.activate([
-            scoreTextSubLabel.topAnchor.constraint(equalTo: self.viewCircle.bottomAnchor, constant: 30),
+            scoreTextSubLabel.topAnchor.constraint(equalTo: self.circularProgressView.bottomAnchor, constant: 40),
             scoreTextSubLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         
         self.addSubview(buttonBackToMenu)
         NSLayoutConstraint.activate([
-            self.buttonBackToMenu.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            self.buttonBackToMenu.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -40),
             self.buttonBackToMenu.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         
