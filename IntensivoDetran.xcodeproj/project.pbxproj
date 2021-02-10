@@ -22,7 +22,9 @@
 		776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A753B25CC96BD00124B7E /* SimulatedViewController.swift */; };
 		776A754225CC989200124B7E /* ViewEssential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A754125CC989200124B7E /* ViewEssential.swift */; };
 		776FC3BD25D367F9003A35AD /* SimulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FC3BC25D367F9003A35AD /* SimulatedViewModel.swift */; };
-		776FC3C525D36EF9003A35AD /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FC3C425D36EF9003A35AD /* AnswerModel.swift */; };
+		776FC3C525D36EF9003A35AD /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FC3C425D36EF9003A35AD /* Answer.swift */; };
+		7770B5E225D48DFC001B5E74 /* Ext+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B5E125D48DFC001B5E74 /* Ext+ActivityIndicator.swift */; };
+		7770B5E725D490F5001B5E74 /* Ext+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B5E625D490F5001B5E74 /* Ext+Border.swift */; };
 		778ED6E525D35D460036FC0B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778ED6E425D35D460036FC0B /* Question.swift */; };
 		779A194525D2B8DF007E8A9A /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
@@ -74,7 +76,9 @@
 		776A753B25CC96BD00124B7E /* SimulatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedViewController.swift; sourceTree = "<group>"; };
 		776A754125CC989200124B7E /* ViewEssential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEssential.swift; sourceTree = "<group>"; };
 		776FC3BC25D367F9003A35AD /* SimulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedViewModel.swift; sourceTree = "<group>"; };
-		776FC3C425D36EF9003A35AD /* AnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
+		776FC3C425D36EF9003A35AD /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		7770B5E125D48DFC001B5E74 /* Ext+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		7770B5E625D490F5001B5E74 /* Ext+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Border.swift"; sourceTree = "<group>"; };
 		778ED6E425D35D460036FC0B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +216,8 @@
 			children = (
 				7756D8BA25CC4C3F00FB6D6B /* Colors.swift */,
 				779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */,
+				7770B5E125D48DFC001B5E74 /* Ext+ActivityIndicator.swift */,
+				7770B5E625D490F5001B5E74 /* Ext+Border.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -236,7 +242,7 @@
 			children = (
 				7762B8F925D35B7C005C8910 /* Category.swift */,
 				778ED6E425D35D460036FC0B /* Question.swift */,
-				776FC3C425D36EF9003A35AD /* AnswerModel.swift */,
+				776FC3C425D36EF9003A35AD /* Answer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -621,13 +627,15 @@
 				778ED6E525D35D460036FC0B /* Question.swift in Sources */,
 				77FE347925CD883C0024E065 /* SimulatedCollectionViewCell.swift in Sources */,
 				7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */,
+				7770B5E725D490F5001B5E74 /* Ext+Border.swift in Sources */,
 				7756D89925CC3DC200FB6D6B /* MenuViewController.swift in Sources */,
 				7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */,
-				776FC3C525D36EF9003A35AD /* AnswerModel.swift in Sources */,
+				776FC3C525D36EF9003A35AD /* Answer.swift in Sources */,
 				7727DF1225D15E060037A85E /* ResultView.swift in Sources */,
 				77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */,
 				776A754225CC989200124B7E /* ViewEssential.swift in Sources */,
 				776A753425CC96AE00124B7E /* SimulatedView.swift in Sources */,
+				7770B5E225D48DFC001B5E74 /* Ext+ActivityIndicator.swift in Sources */,
 				77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */,
 				776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */,
 				7727DF0A25D15DC20037A85E /* ResultViewController.swift in Sources */,

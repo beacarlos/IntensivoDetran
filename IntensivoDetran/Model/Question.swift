@@ -7,9 +7,16 @@
 
 import Foundation
 //switflint:disable identifier_name
-public struct Question: Codable {
-    let answers: [Answer]
-    let categories_id: Int
-    let description: String
-    let questions_id: Int
+public struct Question: Decodable {
+    let answers: [Answer]?
+    let categoriesId: Int?
+    let description: String?
+    let questionsId: Int?
+    
+    enum CondingKeys: String, CodingKey {
+        case answers =  "answers"
+        case categoriesId = "categories_id"
+        case description = "description"
+        case questionsId = "questions_id"
+    }
 }

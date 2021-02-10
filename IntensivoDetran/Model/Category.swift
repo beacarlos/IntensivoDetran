@@ -5,7 +5,12 @@
 
 import Foundation
 
-struct Categories: Codable {
-    let categories_id: Int
-    let name: String
+struct Categories: Decodable {
+    let categoriesId: Int?
+    let name: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case categoriesId = "categories_id"
+        case name = "name"
+    }
 }

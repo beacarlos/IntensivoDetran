@@ -8,7 +8,9 @@
 import UIKit
 
 class SimulatedViewController: UIViewController {
-    var simulatedViewModel = SimulatedViewModel()
+    var questionsResult = [Question]()
+    var answerCorrect = [Int]()
+    let count = 0, max = 40
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
@@ -22,20 +24,35 @@ class SimulatedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view = simulatedView
+        self.showSpinner()
         setDelegatesCollectionView()
         responseData()
     }
     
     override func loadView() {
         super.loadView()
-        self.view = simulatedView
     }
     
     func responseData() {
-        simulatedViewModel.getAllQuestions { (data) in
-            guard let questions = data else { return }
-            print(questions)
+        let service = SimulatedViewModel(baseUrl: "https://api-idetran.herokuapp.com/api/")
+        service.getAllQuestions(endpoint: "getAll") { questions in
+            guard let questions = questions else { return }
+            self.questionsResult = questions
+            self.setData(with: self.questionsResult, count: self.count, max: self.max)
+            DispatchQueue.main.async {
+                self.simulatedView.collectionSimulated.reloadData()
+                self.removeSpinner()
+            }
         }
+    }
+    
+    private func setData(with data: [Question], count: Int, max: Int) {
+        self.simulatedView.numberQuestionLabel.text = "\(count == max ? count : (count + 1)) / 40"
+        self.simulatedView.questionTitleLabel.text = "Questão \(count == max ? count : (count + 1))"
+        self.simulatedView.progressBar.setProgress(0.025 * Float(self.count), animated: true)
+        self.simulatedView.questionLabel.text = data[count].description
+
     }
     
     private func setDelegatesCollectionView() {
@@ -55,6 +72,13 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = self.simulatedView.collectionSimulated.dequeueReusableCell(withReuseIdentifier: "SimulatedCollectionViewCell", for: indexPath) as? SimulatedCollectionViewCell else { return SimulatedCollectionViewCell() }
+        
+        if !self.questionsResult.isEmpty {
+            if let answer =  self.questionsResult[count].answers?[indexPath.row] {
+                cell.titleLabel.text = answer.description
+                cell.tag = answer.correctAnswer == true ? 1 : 0
+            }
+        }
         return cell
     }
 }
