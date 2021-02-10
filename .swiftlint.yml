@@ -8,6 +8,8 @@ excluded:
 - Carthage
 - Pods
 - SwiftLint/Common/3rdPartyLib
+variable_name:
+     allowed_symbols: "_"
 line_length:
     warning: 150
     error: 200
@@ -31,3 +33,4 @@ cyclomatic_complexity:
     warning: 15
     error: 25
 reporter: "xcode"
+

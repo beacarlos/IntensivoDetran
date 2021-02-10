@@ -8,6 +8,8 @@
 import UIKit
 
 class SimulatedViewController: UIViewController {
+    var simulatedViewModel = SimulatedViewModel()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
     }
@@ -21,6 +23,7 @@ class SimulatedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegatesCollectionView()
+        responseData()
     }
     
     override func loadView() {
@@ -28,7 +31,14 @@ class SimulatedViewController: UIViewController {
         self.view = simulatedView
     }
     
-    func setDelegatesCollectionView() {
+    func responseData() {
+        simulatedViewModel.getAllQuestions { (data) in
+            guard let questions = data else { return }
+            print(questions)
+        }
+    }
+    
+    private func setDelegatesCollectionView() {
         self.simulatedView.collectionSimulated.delegate = self
         self.simulatedView.collectionSimulated.dataSource = self
     }
