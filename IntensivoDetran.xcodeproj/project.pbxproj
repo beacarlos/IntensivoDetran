@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13AB999E92F599B84ED38244 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C7246681BDAC2F7F25DF45 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework */; };
 		7727DF0A25D15DC20037A85E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727DF0925D15DC20037A85E /* ResultViewController.swift */; };
 		7727DF1225D15E060037A85E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727DF1125D15E060037A85E /* ResultView.swift */; };
 		7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D89325CC3D7800FB6D6B /* MenuView.swift */; };
@@ -16,9 +17,11 @@
 		7756D8AF25CC3FE800FB6D6B /* Cuprum-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A225CC3F2300FB6D6B /* Cuprum-Medium.ttf */; };
 		7756D8B025CC3FE800FB6D6B /* Cuprum-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */; };
 		7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D8BA25CC4C3F00FB6D6B /* Colors.swift */; };
+		7762B8FA25D35B7C005C8910 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762B8F925D35B7C005C8910 /* Category.swift */; };
 		776A753425CC96AE00124B7E /* SimulatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A753325CC96AE00124B7E /* SimulatedView.swift */; };
 		776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A753B25CC96BD00124B7E /* SimulatedViewController.swift */; };
 		776A754225CC989200124B7E /* ViewEssential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776A754125CC989200124B7E /* ViewEssential.swift */; };
+		778ED6E525D35D460036FC0B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778ED6E425D35D460036FC0B /* Question.swift */; };
 		779A194525D2B8DF007E8A9A /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
@@ -27,8 +30,9 @@
 		77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D42A25CAD34B00E8221D /* LaunchScreen.storyboard */; };
 		77E6D43725CAD34B00E8221D /* IntensivoDetranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D43625CAD34B00E8221D /* IntensivoDetranTests.swift */; };
 		77E6D44225CAD34B00E8221D /* IntensivoDetranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D44125CAD34B00E8221D /* IntensivoDetranUITests.swift */; };
-		77E6D45325CAD7B500E8221D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 77E6D45225CAD7B500E8221D /* .swiftlint.yml */; };
 		77FE347925CD883C0024E065 /* SimulatedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FE347825CD883C0024E065 /* SimulatedCollectionViewCell.swift */; };
+		8C0CA714878CFA5E0799AEF4 /* Pods_IntensivoDetran.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6194385D630EFFE44F24B41D /* Pods_IntensivoDetran.framework */; };
+		B6D3818F348B4070397ADA70 /* Pods_IntensivoDetranTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1B1029293712BE6972F44F /* Pods_IntensivoDetranTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		216319F6E78F932176F77501 /* Pods-IntensivoDetran-IntensivoDetranUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetran-IntensivoDetranUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntensivoDetran-IntensivoDetranUITests/Pods-IntensivoDetran-IntensivoDetranUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60FEBEB2BCEF1EED768B5B55 /* Pods-IntensivoDetran-IntensivoDetranUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetran-IntensivoDetranUITests.release.xcconfig"; path = "Target Support Files/Pods-IntensivoDetran-IntensivoDetranUITests/Pods-IntensivoDetran-IntensivoDetranUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6194385D630EFFE44F24B41D /* Pods_IntensivoDetran.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntensivoDetran.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71522F1CA23A4BBFAA714714 /* Pods-IntensivoDetranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetranTests.debug.xcconfig"; path = "Target Support Files/Pods-IntensivoDetranTests/Pods-IntensivoDetranTests.debug.xcconfig"; sourceTree = "<group>"; };
+		756114630236EA0BA288541A /* Pods-IntensivoDetran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetran.debug.xcconfig"; path = "Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran.debug.xcconfig"; sourceTree = "<group>"; };
 		7727DF0925D15DC20037A85E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7727DF1125D15E060037A85E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		7756D89325CC3D7800FB6D6B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -58,9 +67,11 @@
 		7756D8A425CC3F2300FB6D6B /* Cuprum-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-SemiBold.ttf"; sourceTree = "<group>"; };
 		7756D8A625CC3F2300FB6D6B /* Cuprum-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Regular.ttf"; sourceTree = "<group>"; };
 		7756D8BA25CC4C3F00FB6D6B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7762B8F925D35B7C005C8910 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		776A753325CC96AE00124B7E /* SimulatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedView.swift; sourceTree = "<group>"; };
 		776A753B25CC96BD00124B7E /* SimulatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedViewController.swift; sourceTree = "<group>"; };
 		776A754125CC989200124B7E /* ViewEssential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEssential.swift; sourceTree = "<group>"; };
+		778ED6E425D35D460036FC0B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +86,11 @@
 		77E6D43D25CAD34B00E8221D /* IntensivoDetranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntensivoDetranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D44125CAD34B00E8221D /* IntensivoDetranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntensivoDetranUITests.swift; sourceTree = "<group>"; };
 		77E6D44325CAD34B00E8221D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77E6D45225CAD7B500E8221D /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = IntensivoDetran/.swiftlint.yml; sourceTree = "<group>"; };
 		77FE347825CD883C0024E065 /* SimulatedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedCollectionViewCell.swift; sourceTree = "<group>"; };
+		B521C32E11888B96614D765A /* Pods-IntensivoDetranTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetranTests.release.xcconfig"; path = "Target Support Files/Pods-IntensivoDetranTests/Pods-IntensivoDetranTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9C7246681BDAC2F7F25DF45 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntensivoDetran_IntensivoDetranUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1B1029293712BE6972F44F /* Pods_IntensivoDetranTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntensivoDetranTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4040B739ADF0DB1C08EC7F6 /* Pods-IntensivoDetran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetran.release.xcconfig"; path = "Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0CA714878CFA5E0799AEF4 /* Pods_IntensivoDetran.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D3818F348B4070397ADA70 /* Pods_IntensivoDetranTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +114,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AB999E92F599B84ED38244 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15A034B3A67AE2F23031C4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6194385D630EFFE44F24B41D /* Pods_IntensivoDetran.framework */,
+				B9C7246681BDAC2F7F25DF45 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework */,
+				CB1B1029293712BE6972F44F /* Pods_IntensivoDetranTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D386608E8A98F683A6E4770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				756114630236EA0BA288541A /* Pods-IntensivoDetran.debug.xcconfig */,
+				D4040B739ADF0DB1C08EC7F6 /* Pods-IntensivoDetran.release.xcconfig */,
+				216319F6E78F932176F77501 /* Pods-IntensivoDetran-IntensivoDetranUITests.debug.xcconfig */,
+				60FEBEB2BCEF1EED768B5B55 /* Pods-IntensivoDetran-IntensivoDetranUITests.release.xcconfig */,
+				71522F1CA23A4BBFAA714714 /* Pods-IntensivoDetranTests.debug.xcconfig */,
+				B521C32E11888B96614D765A /* Pods-IntensivoDetranTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7727DF0725D15D5E0037A85E /* Result */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +158,6 @@
 				7727DF0925D15DC20037A85E /* ResultViewController.swift */,
 			);
 			path = Result;
-			sourceTree = "<group>";
-		};
-		7756D88D25CC3CFA00FB6D6B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7756D88E25CC3D4D00FB6D6B /* Menu */ = {
@@ -179,6 +212,29 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		7762B8F425D35B38005C8910 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7762B8F725D35B5C005C8910 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7762B8F825D35B6A005C8910 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7762B8F925D35B7C005C8910 /* Category.swift */,
+				778ED6E425D35D460036FC0B /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		776A753125CC967900124B7E /* Simulated */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,11 +263,12 @@
 		77E6D41025CAD34A00E8221D = {
 			isa = PBXGroup;
 			children = (
-				77E6D45225CAD7B500E8221D /* .swiftlint.yml */,
 				77E6D41B25CAD34A00E8221D /* IntensivoDetran */,
 				77E6D43525CAD34B00E8221D /* IntensivoDetranTests */,
 				77E6D44025CAD34B00E8221D /* IntensivoDetranUITests */,
 				77E6D41A25CAD34A00E8221D /* Products */,
+				1D386608E8A98F683A6E4770 /* Pods */,
+				15A034B3A67AE2F23031C4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,14 +285,15 @@
 		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
 			isa = PBXGroup;
 			children = (
+				7762B8F425D35B38005C8910 /* Service */,
 				776A754025CC985E00124B7E /* Protocols */,
 				7756D8B925CC4C2000FB6D6B /* Core */,
 				7756D89D25CC3E9000FB6D6B /* Supporting files */,
 				77E6D46125CAD8EB00E8221D /* App */,
 				77E6D46025CAD8E300E8221D /* Controller */,
 				77E6D45F25CAD8DE00E8221D /* View */,
-				7756D88D25CC3CFA00FB6D6B /* ViewModel */,
-				77E6D45E25CAD8D100E8221D /* Model */,
+				7762B8F725D35B5C005C8910 /* ViewModel */,
+				7762B8F825D35B6A005C8910 /* Model */,
 				77E6D42D25CAD34B00E8221D /* Info.plist */,
 				77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */,
 			);
@@ -258,13 +316,6 @@
 				77E6D44325CAD34B00E8221D /* Info.plist */,
 			);
 			path = IntensivoDetranUITests;
-			sourceTree = "<group>";
-		};
-		77E6D45E25CAD8D100E8221D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		77E6D45F25CAD8DE00E8221D /* View */ = {
@@ -305,10 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77E6D44625CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetran" */;
 			buildPhases = (
+				5C7717C917B051B47D5F3404 /* [CP] Check Pods Manifest.lock */,
 				77E6D41525CAD34A00E8221D /* Sources */,
 				77E6D41625CAD34A00E8221D /* Frameworks */,
 				77E6D41725CAD34A00E8221D /* Resources */,
 				77E6D45725CAD82500E8221D /* ShellScript */,
+				D632AADF848702FE52DC0B69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +376,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77E6D44925CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranTests" */;
 			buildPhases = (
+				440B25395B6328038121CB1D /* [CP] Check Pods Manifest.lock */,
 				77E6D42E25CAD34B00E8221D /* Sources */,
 				77E6D42F25CAD34B00E8221D /* Frameworks */,
 				77E6D43025CAD34B00E8221D /* Resources */,
@@ -341,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77E6D44C25CAD34B00E8221D /* Build configuration list for PBXNativeTarget "IntensivoDetranUITests" */;
 			buildPhases = (
+				631FA9E798B20EE0CFC0C305 /* [CP] Check Pods Manifest.lock */,
 				77E6D43925CAD34B00E8221D /* Sources */,
 				77E6D43A25CAD34B00E8221D /* Frameworks */,
 				77E6D43B25CAD34B00E8221D /* Resources */,
+				5D5B1F024409D005CBCA3609 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7756D8B025CC3FE800FB6D6B /* Cuprum-Regular.ttf in Resources */,
-				77E6D45325CAD7B500E8221D /* .swiftlint.yml in Resources */,
 				7756D8A825CC3FD000FB6D6B /* Cuprum-Bold.ttf in Resources */,
 				77E6D42C25CAD34B00E8221D /* LaunchScreen.storyboard in Resources */,
 				7756D8AD25CC3FE800FB6D6B /* Cuprum-SemiBold.ttf in Resources */,
@@ -429,6 +484,89 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		440B25395B6328038121CB1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntensivoDetranTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7717C917B051B47D5F3404 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntensivoDetran-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5B1F024409D005CBCA3609 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran-IntensivoDetranUITests/Pods-IntensivoDetran-IntensivoDetranUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran-IntensivoDetranUITests/Pods-IntensivoDetran-IntensivoDetranUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran-IntensivoDetranUITests/Pods-IntensivoDetran-IntensivoDetranUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631FA9E798B20EE0CFC0C305 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntensivoDetran-IntensivoDetranUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77E6D45725CAD82500E8221D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,7 +582,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: Swiftlint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		D632AADF848702FE52DC0B69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -454,7 +609,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				779A194525D2B8DF007E8A9A /* CircularProgressBar.swift in Sources */,
+				7762B8FA25D35B7C005C8910 /* Category.swift in Sources */,
 				77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */,
+				778ED6E525D35D460036FC0B /* Question.swift in Sources */,
 				77FE347925CD883C0024E065 /* SimulatedCollectionViewCell.swift in Sources */,
 				7756D8BB25CC4C3F00FB6D6B /* Colors.swift in Sources */,
 				7756D89925CC3DC200FB6D6B /* MenuViewController.swift in Sources */,
@@ -630,6 +787,7 @@
 		};
 		77E6D44725CAD34B00E8221D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756114630236EA0BA288541A /* Pods-IntensivoDetran.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -649,6 +807,7 @@
 		};
 		77E6D44825CAD34B00E8221D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4040B739ADF0DB1C08EC7F6 /* Pods-IntensivoDetran.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -668,6 +827,7 @@
 		};
 		77E6D44A25CAD34B00E8221D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71522F1CA23A4BBFAA714714 /* Pods-IntensivoDetranTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -690,6 +850,7 @@
 		};
 		77E6D44B25CAD34B00E8221D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B521C32E11888B96614D765A /* Pods-IntensivoDetranTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -712,6 +873,7 @@
 		};
 		77E6D44D25CAD34B00E8221D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216319F6E78F932176F77501 /* Pods-IntensivoDetran-IntensivoDetranUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -732,6 +894,7 @@
 		};
 		77E6D44E25CAD34B00E8221D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FEBEB2BCEF1EED768B5B55 /* Pods-IntensivoDetran-IntensivoDetranUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
