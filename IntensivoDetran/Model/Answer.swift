@@ -7,11 +7,11 @@
 
 import Foundation
 //switflint:disable identifier_name
-struct Answer: Codable {
-    let categoriesId: Int
-    let correctAnswer: Bool
-    let description: String
-    let questionsId: Int
+struct Answer: Decodable {
+    let categoriesId: Int?
+    let correctAnswer: Bool?
+    let description: String?
+    let questionsId: Int?
     
     enum CodingKeys: String, CodingKey {
         case categoriesId = "categories_id"
