@@ -23,6 +23,7 @@ class SimulatedCollectionViewCell: UICollectionViewCell {
     lazy var roundedBackgroundView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .purple
         return view
     }()
     
@@ -37,9 +38,9 @@ class SimulatedCollectionViewCell: UICollectionViewCell {
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         label.textColor = .black
-        label.text = "A) indicar e orientar os usuários da via sobre os locais onde podem dispor de serviços auxiliares, como também contêm informações relacionadas à direção a seguir."
+        label.text = ""
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -57,15 +58,15 @@ extension SimulatedCollectionViewCell {
         
         NSLayoutConstraint.activate([
             roundedBackgroundView.widthAnchor.constraint(equalTo: self.contentView.widthAnchor),
-            roundedBackgroundView.heightAnchor.constraint(equalTo: self.contentView.heightAnchor),
+            roundedBackgroundView.heightAnchor.constraint(equalTo: self.contentView.heightAnchor, constant: -10),
             
-            titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            titleLabel.topAnchor.constraint(equalTo: self.roundedBackgroundView.topAnchor),
+            lineViewBackground.heightAnchor.constraint(equalTo: self.roundedBackgroundView.heightAnchor),
+            lineViewBackground.widthAnchor.constraint(equalToConstant: 2),
             
-            lineViewBackground.widthAnchor.constraint(equalToConstant: 3),
-            lineViewBackground.heightAnchor.constraint(equalTo: self.titleLabel.heightAnchor, constant: 10),
-            lineViewBackground.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10)
+//            titleLabel.widthAnchor.constraint(equalTo: self.widthAnchor),
+//            titleLabel.leadingAnchor.constraint(equalTo: self.roundedBackgroundView.leadingAnchor),
+//            titleLabel.trailingAnchor.constraint(equalTo: self.roundedBackgroundView.trailingAnchor),
+//            titleLabel.topAnchor.constraint(equalTo: self.roundedBackgroundView.topAnchor)
         ])
         
     }
