@@ -34,13 +34,13 @@ class SimulatedViewController: UIViewController {
         super.loadView()
     }
     
-    func responseData() {
+    private func responseData() {
         let service = SimulatedViewModel(baseUrl: "https://api-idetran.herokuapp.com/api/")
         service.getAllQuestions(endpoint: "getAll") { questions in
             guard let questions = questions else { return }
             self.questionsResult = questions
-            self.setData(with: self.questionsResult, count: self.count, max: self.max)
             DispatchQueue.main.async {
+                self.setData(with: self.questionsResult, count: self.count, max: self.max)
                 self.simulatedView.collectionSimulated.reloadData()
                 self.removeSpinner()
             }
@@ -80,5 +80,12 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
             }
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? SimulatedCollectionViewCell {
+            cell.butonCheck.alpha = 1
+            answerCorrect[self.count] = cell.tag
+        }
     }
 }

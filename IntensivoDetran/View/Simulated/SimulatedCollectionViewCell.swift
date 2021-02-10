@@ -57,6 +57,7 @@ class SimulatedCollectionViewCell: UICollectionViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 20
+        button.alpha = 0
         return button
     }()
 }
