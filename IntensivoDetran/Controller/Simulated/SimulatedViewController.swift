@@ -24,13 +24,14 @@ class SimulatedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view = simulatedView
+        self.showSpinner()
         setDelegatesCollectionView()
         responseData()
     }
     
     override func loadView() {
         super.loadView()
-        self.view = simulatedView
     }
     
     func responseData() {
@@ -41,15 +42,15 @@ class SimulatedViewController: UIViewController {
             self.setData(with: self.questionsResult, count: self.count, max: self.max)
             DispatchQueue.main.async {
                 self.simulatedView.collectionSimulated.reloadData()
+                self.removeSpinner()
             }
-
         }
     }
     
-    func setData(with data: [Question], count: Int, max: Int) {
+    private func setData(with data: [Question], count: Int, max: Int) {
         self.simulatedView.numberQuestionLabel.text = "\(count == max ? count : (count + 1)) / 40"
-        self.simulatedView.progressBar.setProgress(0.025 * Float(count), animated: true)
         self.simulatedView.questionTitleLabel.text = "Questão \(count == max ? count : (count + 1))"
+        self.simulatedView.progressBar.setProgress(0.025 * Float(self.count), animated: true)
         self.simulatedView.questionLabel.text = data[count].description
 
     }
