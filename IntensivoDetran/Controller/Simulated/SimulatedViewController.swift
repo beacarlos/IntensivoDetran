@@ -41,7 +41,7 @@ class SimulatedViewController: UIViewController {
         let service = SimulatedViewModel(baseUrl: "https://api-idetran.herokuapp.com/api/")
         service.getAllQuestions(endpoint: "getAll") { questions in
             guard let questions = questions else { return }
-            self.questionsResult = questions
+            self.questionsResult = questions.shuffled()
             DispatchQueue.main.async {
                 self.setData(with: self.questionsResult, count: self.count, max: self.max)
                 self.simulatedView.collectionSimulated.reloadData()

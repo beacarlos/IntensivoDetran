@@ -7,6 +7,7 @@
 
 import UIKit
 
+//swiftlint:disable discouraged_direct_init switch_case_alignment
 class MenuView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -69,8 +70,14 @@ class MenuView: UIView {
         label.text = "A prova teórica do Detran"
         label.textAlignment = .left
         label.textColor = UIColor(red: 0.07, green: 0.08, blue: 0.08, alpha: 1.00)
-        label.font = UIFont(name: "Cuprum-Bold", size: 20)
         label.alpha = 1
+
+        switch UIDevice().type {
+        case .iPhoneSE:
+            label.font = .systemFont(ofSize: 18)
+        default:
+            label.font = UIFont(name: "Cuprum-Bold", size: 20)
+        }
         return label
     }()
     
@@ -82,6 +89,13 @@ class MenuView: UIView {
         label.numberOfLines = 3
         label.textColor = .colorCaption
         label.font = .systemFont(ofSize: 18)
+        
+        switch UIDevice().type {
+        case .iPhoneSE:
+            label.font = .systemFont(ofSize: 15)
+        default:
+            label.font = .systemFont(ofSize: 18)
+        }
         return label
     }()
     
@@ -94,7 +108,7 @@ class MenuView: UIView {
         button.layer.cornerRadius = 13
         button.layer.borderColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00).cgColor
         button.layer.borderWidth = 1
-        button.contentEdgeInsets = UIEdgeInsets(top: 22, left: 22, bottom: 22, right: 22)
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 18, bottom: 0, right: 15)
         button.setImage(UIImage(named: "ic_simulated"), for: .normal)
         button.semanticContentAttribute = .forceLeftToRight
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -125,16 +139,25 @@ class MenuView: UIView {
         self.addSubview(buttonSimulated)
         NSLayoutConstraint.activate([
             self.buttonSimulated.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -30),
-            self.buttonSimulated.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            self.buttonSimulated.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            self.buttonSimulated.heightAnchor.constraint(equalToConstant: 70)
         ])
         
         self.addSubview(viewDescription)
         NSLayoutConstraint.activate([
-            self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonSimulated.topAnchor, constant: -60),
             self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 35),
-            self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
-            self.viewDescription.heightAnchor.constraint(equalToConstant: 165)
+            self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35)
         ])
+        
+        switch UIDevice().type {
+            case .iPhoneSE:
+                self.viewDescription.heightAnchor.constraint(equalToConstant: 140).isActive = true
+                self.viewDescription.topAnchor.constraint(equalTo: self.viewTop.bottomAnchor, constant: 20).isActive = true
+
+            default:
+                self.viewDescription.heightAnchor.constraint(equalToConstant: 165).isActive = true
+                self.viewDescription.topAnchor.constraint(equalTo: self.viewTop.bottomAnchor, constant: 60).isActive = true
+        }
         
         self.viewDescription.addSubview(titleDescriptionLabel)
         NSLayoutConstraint.activate([

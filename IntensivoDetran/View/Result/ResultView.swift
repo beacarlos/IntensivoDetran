@@ -7,7 +7,10 @@
 
 import UIKit
 
+//swiftlint:disable discouraged_direct_init
 class ResultView: UIView {
+    let deviceType = UIDevice().type
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -28,7 +31,7 @@ class ResultView: UIView {
     }()
     
     lazy var circularProgressView: CircularProgressBar = {
-        let cBar = CircularProgressBar(frame: CGRect(x: 0, y: -10, width: 220, height: 220))
+        var cBar = CircularProgressBar(frame: CGRect(x: 0, y: -10, width: 220, height: 220))
         cBar.trackColor = UIColor(red: 0.94, green: 0.94, blue: 0.94, alpha: 1.00)
         cBar.progressColor = .colorPrimary
         cBar.tag = 101
@@ -38,7 +41,7 @@ class ResultView: UIView {
     }()
     
     @objc private func animateProgress() {
-        self.circularProgressView.setProgressWithAnimation(duration: 1.0, value: 0.7)
+        self.circularProgressView.setProgressWithAnimation(duration: 1.0, value: 0)
     }
     
     lazy var viewCircle: UIView = {
@@ -70,17 +73,25 @@ class ResultView: UIView {
     
     lazy var scoreTextSubLabel: UILabel = {
         let label = UILabel()
+        
+        switch UIDevice().type {
+        case .iPhone11, .iPhone12, .iPhone11Pro, .iPhone12Pro, .iPhone11ProMax, .iPhone12ProMax, .iPhoneXR, .iPhoneXSMax:
+            label.font = UIFont(name: "Cuprum-Bold", size: 25)
+        default:
+            label.font = UIFont(name: "Cuprum-Bold", size: 17)
+            label.textAlignment = .left
+        }
+        
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = ""
-        label.numberOfLines = 4
-        label.textAlignment = .center
+        label.numberOfLines = 3
         label.textColor = .black
-        label.font = UIFont(name: "Cuprum-Bold", size: 25)
         return label
     }()
     
     lazy var viewDescription: UIView = {
         let view = UIView()
+        
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .colorPrimaryLight
         view.clipsToBounds = true
@@ -144,7 +155,7 @@ class ResultView: UIView {
         
         self.addSubview(viewCircle)
         NSLayoutConstraint.activate([
-            viewCircle.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 45),
+            viewCircle.centerYAnchor.constraint(equalTo: self.circularProgressView.centerYAnchor),
             viewCircle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             viewCircle.widthAnchor.constraint(equalToConstant: 200),
             viewCircle.heightAnchor.constraint(equalToConstant: 200)
@@ -162,24 +173,27 @@ class ResultView: UIView {
             scoreSubLabel.centerXAnchor.constraint(equalTo: self.viewCircle.centerXAnchor)
         ])
         
-        self.addSubview(scoreTextSubLabel)
-        NSLayoutConstraint.activate([
-            scoreTextSubLabel.topAnchor.constraint(equalTo: self.circularProgressView.bottomAnchor, constant: 40),
-            scoreTextSubLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
-        ])
-        
         self.addSubview(buttonBackToMenu)
         NSLayoutConstraint.activate([
             self.buttonBackToMenu.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -40),
+            self.buttonBackToMenu.heightAnchor.constraint(equalToConstant: 54),
             self.buttonBackToMenu.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
         
         self.addSubview(viewDescription)
         NSLayoutConstraint.activate([
-            self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonBackToMenu.topAnchor, constant: -60),
+            self.viewDescription.bottomAnchor.constraint(equalTo: self.buttonBackToMenu.topAnchor, constant: -30),
             self.viewDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 34),
             self.viewDescription.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -34),
             self.viewDescription.heightAnchor.constraint(equalToConstant: 170)
+        ])
+        
+        self.addSubview(scoreTextSubLabel)
+        NSLayoutConstraint.activate([
+            scoreTextSubLabel.topAnchor.constraint(equalTo: self.circularProgressView.bottomAnchor, constant: 20),
+            scoreTextSubLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 34),
+            scoreTextSubLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -34),
+            scoreTextSubLabel.bottomAnchor.constraint(equalTo: self.viewDescription.topAnchor, constant: -10)
         ])
         
         self.viewDescription.addSubview(titleDescriptionLabel)

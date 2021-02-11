@@ -7,6 +7,7 @@
 
 import UIKit
 
+//swiftlint:disable discouraged_direct_init
 class SimulatedView: UIView, ViewEssential {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -70,6 +71,13 @@ class SimulatedView: UIView, ViewEssential {
         label.lineBreakMode = .byWordWrapping
         label.frame.size.width = 300
         label.font = UIFont.systemFont(ofSize: 20)
+        
+        switch UIDevice().type {
+        case .iPhoneSE:
+            label.font = UIFont.systemFont(ofSize: 16)
+        default:
+            label.font = UIFont.systemFont(ofSize: 20)
+        }
         return label
     }()
     
@@ -154,7 +162,7 @@ class SimulatedView: UIView, ViewEssential {
         
         self.addSubview(collectionSimulated)
         NSLayoutConstraint.activate([
-            collectionSimulated.topAnchor.constraint(equalTo: self.questionLabel.bottomAnchor, constant: 30),
+            collectionSimulated.topAnchor.constraint(equalTo: self.questionLabel.bottomAnchor, constant: 0),
             collectionSimulated.widthAnchor.constraint(equalTo: self.widthAnchor),
             collectionSimulated.bottomAnchor.constraint(equalTo: self.buttonNext.topAnchor, constant: -30)
         ])
