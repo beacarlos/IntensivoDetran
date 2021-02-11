@@ -31,8 +31,6 @@ class ResultViewController: UIViewController {
         self.resultView.scoreLabel.text = "\(score) / 40"
         self.resultView.scoreSubLabel.text = (Float(score) * 0.25) >= 7.0 ? "Excelente!" : "Tente de novo!"
         self.resultView.scoreTextSubLabel.text = (Float(score) * 0.25) >= 7.0 ? "Você tirou \(Float(score) * 0.25), com essa nota \npassaria na prova do Detran!" : "Você tirou \(Float(score) * 0.25), com essa nota \n não passaria na prova do Detran, \ncontinue estudando!"
-        print(answerCorrect)
-        print(score)
     }
     
     @objc func backToMenuAction(sender: UIButton) {
