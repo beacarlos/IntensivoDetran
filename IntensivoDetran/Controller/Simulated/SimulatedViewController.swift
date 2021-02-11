@@ -22,6 +22,7 @@ class SimulatedViewController: UIViewController {
         let view = SimulatedView(frame: UIScreen.main.bounds)
         view.stopButton.addTarget(self, action: #selector(buttonStopAction), for: .touchUpInside)
         view.buttonNext.addTarget(self, action: #selector(nextButtonAction), for: .touchUpInside)
+        view.collectionSimulated.allowsMultipleSelection = false
         return view
     }()
     
@@ -115,5 +116,10 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
             cell.butonCheck.alpha = 1
             answerCorrect[self.count] = cell.tag
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        collectionView.indexPathsForSelectedItems?.filter({ $0.section == indexPath.section }).forEach({ collectionView.deselectItem(at: $0, animated: false) })
+        return true
     }
 }
