@@ -9,8 +9,10 @@ import UIKit
 
 class SimulatedViewController: UIViewController {
     var questionsResult = [Question]()
-    var answerCorrect = [Int]()
-    let count = 0, max = 40
+    var answerCorrect = Array(repeating: 0, count: 40)
+
+    private var count = 0
+    private let max = 40
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
@@ -19,6 +21,7 @@ class SimulatedViewController: UIViewController {
     var simulatedView: SimulatedView = {
         let view = SimulatedView(frame: UIScreen.main.bounds)
         view.stopButton.addTarget(self, action: #selector(buttonStopAction), for: .touchUpInside)
+        view.buttonNext.addTarget(self, action: #selector(nextButtonAction), for: .touchUpInside)
         return view
     }()
     
@@ -62,6 +65,22 @@ class SimulatedViewController: UIViewController {
     
     @objc func buttonStopAction(sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @objc func nextButtonAction(sender: UIButton) {
+        if count < 39 {
+            self.count += 1
+            setData(with: self.questionsResult, count: self.count, max: max)
+            self.simulatedView.collectionSimulated.reloadData()
+        } else {
+            let resultViewController = ResultViewController()
+            resultViewController.answerCorrect = self.answerCorrect
+            navigationController?.pushViewController(resultViewController, animated: true)
+        }
+        
+        if count == 38 {
+            self.simulatedView.buttonNext.setTitle("Finalizar", for: .normal)
+        }
     }
 }
 
