@@ -66,6 +66,7 @@
 		770E7A5425D55B1200D325A8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		7727DF0925D15DC20037A85E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7727DF1125D15E060037A85E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		773861CB25D5AF2E00B0BDD1 /* IntensivoDetran.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IntensivoDetran.entitlements; sourceTree = "<group>"; };
 		7756D89325CC3D7800FB6D6B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		7756D89825CC3DC200FB6D6B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7756D8A025CC3F2300FB6D6B /* Cuprum-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cuprum-Bold.ttf"; sourceTree = "<group>"; };
@@ -300,6 +301,7 @@
 		77E6D41B25CAD34A00E8221D /* IntensivoDetran */ = {
 			isa = PBXGroup;
 			children = (
+				773861CB25D5AF2E00B0BDD1 /* IntensivoDetran.entitlements */,
 				7762B8F425D35B38005C8910 /* Service */,
 				776A754025CC985E00124B7E /* Protocols */,
 				7756D8B925CC4C2000FB6D6B /* Core */,
@@ -811,6 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntensivoDetran/IntensivoDetran.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = IntensivoDetran/Info.plist;
@@ -832,6 +835,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IntensivoDetran/IntensivoDetran.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VH525588L5;
 				INFOPLIST_FILE = IntensivoDetran/Info.plist;
