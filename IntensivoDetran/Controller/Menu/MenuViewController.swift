@@ -20,18 +20,12 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
     }
     
     override func loadView() {
         super.loadView()
         self.view = menuView
     }
-    
-    // defazer
-    // fazer
-    
-    private func setupUI() {}
     
     @objc func buttonSimulatedAction(sender: UIButton) {
         let pulse = CASpringAnimation(keyPath: "transform.scale")
@@ -67,9 +61,5 @@ class MenuViewController: UIViewController {
             self.menuView.viewTop.alpha = 1
             self.menuView.buttonSimulated.alpha = 1
         })
-    }
-    
-    func pulsate() {
-        
     }
 }
