@@ -51,7 +51,7 @@ class ResultView: UIView {
     lazy var scoreLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "20 / 40"
+        label.text = ""
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont(name: "Cuprum-Bold", size: 40)
@@ -61,7 +61,7 @@ class ResultView: UIView {
     lazy var scoreSubLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Excelente!"
+        label.text = ""
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont(name: "Cuprum-Bold", size: 30)
@@ -71,8 +71,8 @@ class ResultView: UIView {
     lazy var scoreTextSubLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Você tirou 7,00, com essa nota \npassaria na prova do Detran!"
-        label.numberOfLines = 2
+        label.text = ""
+        label.numberOfLines = 4
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont(name: "Cuprum-Bold", size: 25)

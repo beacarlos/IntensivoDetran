@@ -21,14 +21,12 @@ class SimulatedViewModel {
     func getAllQuestions(endpoint: String, completion: @escaping ([Question]?) -> Void) {
         AF.request(self.baseUrl + endpoint, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response { (responseData) in
             guard let data = responseData.data else { return }
-            print(data)
             
             do {
                 let questions = try JSONDecoder().decode([Question].self, from: data)
                 completion(questions)
 
             } catch {
-                print(error)
                 completion(nil)
             }
         }

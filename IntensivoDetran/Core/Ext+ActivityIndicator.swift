@@ -22,7 +22,7 @@ extension UIViewController {
         aView?.addSubview(ai)
         self.view.addSubview(aView!)
         
-        Timer.scheduledTimer(withTimeInterval: 25, repeats: false) { _ in
+        Timer.scheduledTimer(withTimeInterval: 50, repeats: false) { _ in
             self.removeSpinner()
         }
     }

@@ -32,7 +32,7 @@ class SimulatedView: UIView, ViewEssential {
     
     lazy var progressBar: UIProgressView = {
         let progressView = UIProgressView(progressViewStyle: .bar)
-        progressView.setProgress(0.025, animated: true)
+        progressView.setProgress(0, animated: true)
         progressView.trackTintColor = UIColor(red: 0.94, green: 0.94, blue: 0.94, alpha: 1.00)
         progressView.tintColor = .colorPrimary
         progressView.layer.masksToBounds = true
@@ -63,7 +63,7 @@ class SimulatedView: UIView, ViewEssential {
     lazy var questionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Interromper o funcionamento do motor sem justa razão (deixar o veículo “morrer”), após o início da prova, é falta: "
+        label.text = ""
         label.textAlignment = .left
         label.textColor = .darkText
         label.numberOfLines = 0

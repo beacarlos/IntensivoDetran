@@ -9,8 +9,10 @@ import UIKit
 
 class SimulatedViewController: UIViewController {
     var questionsResult = [Question]()
-    var answerCorrect = [Int]()
-    let count = 0, max = 40
+    var answerCorrect = Array(repeating: 0, count: 40)
+    
+    private var count = 0
+    private let max = 40
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
@@ -19,6 +21,7 @@ class SimulatedViewController: UIViewController {
     var simulatedView: SimulatedView = {
         let view = SimulatedView(frame: UIScreen.main.bounds)
         view.stopButton.addTarget(self, action: #selector(buttonStopAction), for: .touchUpInside)
+        view.buttonNext.addTarget(self, action: #selector(nextButtonAction), for: .touchUpInside)
         return view
     }()
     
@@ -34,13 +37,13 @@ class SimulatedViewController: UIViewController {
         super.loadView()
     }
     
-    func responseData() {
+    private func responseData() {
         let service = SimulatedViewModel(baseUrl: "https://api-idetran.herokuapp.com/api/")
         service.getAllQuestions(endpoint: "getAll") { questions in
             guard let questions = questions else { return }
             self.questionsResult = questions
-            self.setData(with: self.questionsResult, count: self.count, max: self.max)
             DispatchQueue.main.async {
+                self.setData(with: self.questionsResult, count: self.count, max: self.max)
                 self.simulatedView.collectionSimulated.reloadData()
                 self.removeSpinner()
             }
@@ -52,7 +55,7 @@ class SimulatedViewController: UIViewController {
         self.simulatedView.questionTitleLabel.text = "Questão \(count == max ? count : (count + 1))"
         self.simulatedView.progressBar.setProgress(0.025 * Float(self.count), animated: true)
         self.simulatedView.questionLabel.text = data[count].description
-
+        
     }
     
     private func setDelegatesCollectionView() {
@@ -61,7 +64,29 @@ class SimulatedViewController: UIViewController {
     }
     
     @objc func buttonStopAction(sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        let alert = UIAlertController(title: "Tem certeza?", message: "Ao parar, a sua pontuação não é salva.", preferredStyle: UIAlertController.Style.alert)
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Sim, tenho certeza.", style: UIAlertAction.Style.default, handler: { (_) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "Não, cancelar.", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func nextButtonAction(sender: UIButton) {
+        if count < 39 {
+            self.count += 1
+            setData(with: self.questionsResult, count: self.count, max: max)
+            self.simulatedView.collectionSimulated.reloadData()
+        } else {
+            let resultViewController = ResultViewController()
+            resultViewController.answerCorrect = self.answerCorrect
+            navigationController?.pushViewController(resultViewController, animated: true)
+        }
+        
+        if count == 38 {
+            self.simulatedView.buttonNext.setTitle("Finalizar", for: .normal)
+        }
     }
 }
 
@@ -80,5 +105,12 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
             }
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? SimulatedCollectionViewCell {
+            cell.butonCheck.alpha = 1
+            answerCorrect[self.count] = cell.tag
+        }
     }
 }

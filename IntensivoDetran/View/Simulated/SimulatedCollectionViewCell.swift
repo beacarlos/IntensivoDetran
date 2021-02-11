@@ -20,6 +20,10 @@ class SimulatedCollectionViewCell: UICollectionViewCell {
         setupUI()
     }
     
+    override func setNeedsLayout() {
+        self.butonCheck.alpha = 0
+    }
+    
     lazy var roundedBackgroundView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +61,7 @@ class SimulatedCollectionViewCell: UICollectionViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 20
+        button.alpha = 0
         return button
     }()
 }
