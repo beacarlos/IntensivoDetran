@@ -10,7 +10,7 @@ import UIKit
 class SimulatedViewController: UIViewController {
     var questionsResult = [Question]()
     var answerCorrect = Array(repeating: 0, count: 40)
-
+    
     private var count = 0
     private let max = 40
     
@@ -55,7 +55,7 @@ class SimulatedViewController: UIViewController {
         self.simulatedView.questionTitleLabel.text = "Questão \(count == max ? count : (count + 1))"
         self.simulatedView.progressBar.setProgress(0.025 * Float(self.count), animated: true)
         self.simulatedView.questionLabel.text = data[count].description
-
+        
     }
     
     private func setDelegatesCollectionView() {
@@ -64,7 +64,13 @@ class SimulatedViewController: UIViewController {
     }
     
     @objc func buttonStopAction(sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        let alert = UIAlertController(title: "Tem certeza?", message: "Ao parar, a sua pontuação não é salva.", preferredStyle: UIAlertController.Style.alert)
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Sim, tenho certeza.", style: UIAlertAction.Style.default, handler: { (_) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "Não, cancelar.", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func nextButtonAction(sender: UIButton) {
