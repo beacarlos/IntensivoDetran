@@ -37,7 +37,7 @@ class ResultView: UIView {
         return cBar
     }()
     
-    @objc func animateProgress() {
+    @objc private func animateProgress() {
         self.circularProgressView.setProgressWithAnimation(duration: 1.0, value: 0.7)
     }
     

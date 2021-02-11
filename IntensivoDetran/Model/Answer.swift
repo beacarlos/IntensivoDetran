@@ -29,5 +29,4 @@ struct Answer: Decodable {
         description = try values.decodeIfPresent(String.self, forKey: .description)!
         questionsId = try values.decodeIfPresent(Int.self, forKey: .questionsId)!
     }
-    
 }

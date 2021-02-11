@@ -25,7 +25,7 @@ class ResultViewController: UIViewController {
         showScore()
     }
     
-    func showScore() {
+    private func showScore() {
         let score = answerCorrect.filter { $0 == 1 }.count
         self.resultView.circularProgressView.setProgressWithAnimation(duration: 1.0, value: Float(score) * 0.025)
         self.resultView.scoreLabel.text = "\(score) / 40"
