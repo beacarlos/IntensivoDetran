@@ -7,7 +7,6 @@ target 'IntensivoDetran' do
   pod 'Alamofire', '~> 5.2'
   pod 'SwiftLint', '~> 0.27'
 
-
   # Pods for IntensivoDetran
 
   target 'IntensivoDetranTests' do

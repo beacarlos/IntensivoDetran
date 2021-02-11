@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13AB999E92F599B84ED38244 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C7246681BDAC2F7F25DF45 /* Pods_IntensivoDetran_IntensivoDetranUITests.framework */; };
+		770E7A5525D55B1200D325A8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770E7A5425D55B1200D325A8 /* Device.swift */; };
 		7727DF0A25D15DC20037A85E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727DF0925D15DC20037A85E /* ResultViewController.swift */; };
 		7727DF1225D15E060037A85E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7727DF1125D15E060037A85E /* ResultView.swift */; };
 		7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756D89325CC3D7800FB6D6B /* MenuView.swift */; };
@@ -62,6 +63,7 @@
 		6194385D630EFFE44F24B41D /* Pods_IntensivoDetran.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntensivoDetran.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71522F1CA23A4BBFAA714714 /* Pods-IntensivoDetranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetranTests.debug.xcconfig"; path = "Target Support Files/Pods-IntensivoDetranTests/Pods-IntensivoDetranTests.debug.xcconfig"; sourceTree = "<group>"; };
 		756114630236EA0BA288541A /* Pods-IntensivoDetran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntensivoDetran.debug.xcconfig"; path = "Target Support Files/Pods-IntensivoDetran/Pods-IntensivoDetran.debug.xcconfig"; sourceTree = "<group>"; };
+		770E7A5425D55B1200D325A8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		7727DF0925D15DC20037A85E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7727DF1125D15E060037A85E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		7756D89325CC3D7800FB6D6B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */,
 				7770B5E125D48DFC001B5E74 /* Ext+ActivityIndicator.swift */,
 				7770B5E625D490F5001B5E74 /* Ext+Border.swift */,
+				770E7A5425D55B1200D325A8 /* Device.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */,
 				776A753C25CC96BD00124B7E /* SimulatedViewController.swift in Sources */,
 				7727DF0A25D15DC20037A85E /* ResultViewController.swift in Sources */,
+				770E7A5525D55B1200D325A8 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
