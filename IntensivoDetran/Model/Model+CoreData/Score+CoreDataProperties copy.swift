@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension Score {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Score> {
