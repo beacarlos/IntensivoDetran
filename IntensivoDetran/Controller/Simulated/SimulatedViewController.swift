@@ -7,6 +7,7 @@
 
 import UIKit
 
+//swiftlint:disable empty_string
 class SimulatedViewController: UIViewController {
     var questionsResult = [Question]()
     var answerCorrect = Array(repeating: 0, count: 40)
@@ -68,10 +69,15 @@ class SimulatedViewController: UIViewController {
         let alert = UIAlertController(title: "Tem certeza?", message: "O simulado irá ser finalizado.", preferredStyle: UIAlertController.Style.alert)
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "Sim, tenho certeza.", style: UIAlertAction.Style.default, handler: { (_) in
-            let resultViewController = ResultViewController()
-            resultViewController.answerCorrect = self.answerCorrect
-            self.navigationController?.pushViewController(resultViewController, animated: true)
+            if self.simulatedView.questionLabel.text != "" {
+                let resultViewController = ResultViewController()
+                resultViewController.answerCorrect = self.answerCorrect
+                self.navigationController?.pushViewController(resultViewController, animated: true)
+            } else {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
         }))
+        
         alert.addAction(UIAlertAction(title: "Não, cancelar.", style: UIAlertAction.Style.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

@@ -28,6 +28,8 @@
 		7770B5E725D490F5001B5E74 /* Ext+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770B5E625D490F5001B5E74 /* Ext+Border.swift */; };
 		778ED6E525D35D460036FC0B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778ED6E425D35D460036FC0B /* Question.swift */; };
 		779A194525D2B8DF007E8A9A /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */; };
+		77E59F4425D6B7DF00B8F32B /* Score+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59F4225D6B7DE00B8F32B /* Score+CoreDataClass copy.swift */; };
+		77E59F4525D6B7DF00B8F32B /* Score+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59F4325D6B7DF00B8F32B /* Score+CoreDataProperties copy.swift */; };
 		77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41C25CAD34A00E8221D /* AppDelegate.swift */; };
 		77E6D41F25CAD34A00E8221D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */; };
 		77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77E6D42525CAD34A00E8221D /* IntensivoDetran.xcdatamodeld */; };
@@ -84,6 +86,8 @@
 		7770B5E625D490F5001B5E74 /* Ext+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Border.swift"; sourceTree = "<group>"; };
 		778ED6E425D35D460036FC0B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		779A194425D2B8DF007E8A9A /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		77E59F4225D6B7DE00B8F32B /* Score+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Score+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		77E59F4325D6B7DF00B8F32B /* Score+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Score+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		77E6D41925CAD34A00E8221D /* IntensivoDetran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntensivoDetran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E6D41C25CAD34A00E8221D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E6D41E25CAD34A00E8221D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 		7762B8F825D35B6A005C8910 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77E59F2625D6AC0C00B8F32B /* Model+CoreData */,
 				7762B8F925D35B7C005C8910 /* Category.swift */,
 				778ED6E425D35D460036FC0B /* Question.swift */,
 				776FC3C425D36EF9003A35AD /* Answer.swift */,
@@ -274,6 +279,15 @@
 				776A754125CC989200124B7E /* ViewEssential.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		77E59F2625D6AC0C00B8F32B /* Model+CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				77E59F4325D6B7DF00B8F32B /* Score+CoreDataProperties copy.swift */,
+				77E59F4225D6B7DE00B8F32B /* Score+CoreDataClass copy.swift */,
+			);
+			path = "Model+CoreData";
 			sourceTree = "<group>";
 		};
 		77E6D41025CAD34A00E8221D = {
@@ -627,6 +641,7 @@
 			files = (
 				779A194525D2B8DF007E8A9A /* CircularProgressBar.swift in Sources */,
 				7762B8FA25D35B7C005C8910 /* Category.swift in Sources */,
+				77E59F4525D6B7DF00B8F32B /* Score+CoreDataProperties copy.swift in Sources */,
 				776FC3BD25D367F9003A35AD /* SimulatedViewModel.swift in Sources */,
 				77E6D42725CAD34A00E8221D /* IntensivoDetran.xcdatamodeld in Sources */,
 				778ED6E525D35D460036FC0B /* Question.swift in Sources */,
@@ -637,6 +652,7 @@
 				7756D89425CC3D7800FB6D6B /* MenuView.swift in Sources */,
 				776FC3C525D36EF9003A35AD /* Answer.swift in Sources */,
 				7727DF1225D15E060037A85E /* ResultView.swift in Sources */,
+				77E59F4425D6B7DF00B8F32B /* Score+CoreDataClass copy.swift in Sources */,
 				77E6D41D25CAD34A00E8221D /* AppDelegate.swift in Sources */,
 				776A754225CC989200124B7E /* ViewEssential.swift in Sources */,
 				776A753425CC96AE00124B7E /* SimulatedView.swift in Sources */,
