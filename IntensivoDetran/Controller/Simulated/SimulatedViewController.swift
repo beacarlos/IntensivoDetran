@@ -22,6 +22,7 @@ class SimulatedViewController: UIViewController {
         let view = SimulatedView(frame: UIScreen.main.bounds)
         view.stopButton.addTarget(self, action: #selector(buttonStopAction), for: .touchUpInside)
         view.buttonNext.addTarget(self, action: #selector(nextButtonAction), for: .touchUpInside)
+        view.collectionSimulated.allowsMultipleSelection = false
         return view
     }()
     
@@ -64,10 +65,12 @@ class SimulatedViewController: UIViewController {
     }
     
     @objc func buttonStopAction(sender: UIButton) {
-        let alert = UIAlertController(title: "Tem certeza?", message: "Ao parar, a sua pontuação não é salva.", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Tem certeza?", message: "O simulado irá ser finalizado.", preferredStyle: UIAlertController.Style.alert)
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "Sim, tenho certeza.", style: UIAlertAction.Style.default, handler: { (_) in
-            self.navigationController?.popToRootViewController(animated: true)
+            let resultViewController = ResultViewController()
+            resultViewController.answerCorrect = self.answerCorrect
+            self.navigationController?.pushViewController(resultViewController, animated: true)
         }))
         alert.addAction(UIAlertAction(title: "Não, cancelar.", style: UIAlertAction.Style.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -102,6 +105,7 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
             if let answer =  self.questionsResult[count].answers?[indexPath.row] {
                 cell.titleLabel.text = answer.description
                 cell.tag = answer.correctAnswer == true ? 1 : 0
+                collectionView.contentOffset = .zero
             }
         }
         return cell
@@ -112,5 +116,10 @@ extension SimulatedViewController: UICollectionViewDelegate, UICollectionViewDat
             cell.butonCheck.alpha = 1
             answerCorrect[self.count] = cell.tag
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        collectionView.indexPathsForSelectedItems?.filter({ $0.section == indexPath.section }).forEach({ collectionView.deselectItem(at: $0, animated: false) })
+        return true
     }
 }

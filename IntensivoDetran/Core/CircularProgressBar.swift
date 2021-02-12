@@ -8,8 +8,8 @@
 import UIKit
 
 class CircularProgressBar: UIView {
-    fileprivate var progressLayer = CAShapeLayer()
-    fileprivate var trackLayer = CAShapeLayer()
+    var progressLayer = CAShapeLayer()
+    var trackLayer = CAShapeLayer()
     
     var progressColor = UIColor.white {
         didSet {
@@ -48,14 +48,13 @@ class CircularProgressBar: UIView {
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = progressColor.cgColor
         progressLayer.lineWidth =  6
-        progressLayer.strokeEnd = 0
         layer.addSublayer(progressLayer)
     }
     
     func setProgressWithAnimation(duration: TimeInterval, value: Float) {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.duration = duration
-        animation.fromValue = 0
+        animation.fromValue = 49
         animation.toValue = value
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         progressLayer.strokeEnd = CGFloat(value)
