@@ -11,7 +11,7 @@
 
 ## API
  👤 **API Detran**
-* Repository: [link](https://github.com/beacarlos/api-detran)
+* Repository: https://github.com/beacarlos/api-detran
 
 ## Show your support
 Give a ⭐️ if this project helped you!
