@@ -10,7 +10,7 @@
 * LinkedIn: [Beatriz Carlos](https://www.linkedin.com/in/beatriz-carlos-936a07192/)
 
 ## API
- 👤 **API Detran**
+**API Detran**
 * Repository: https://github.com/beacarlos/api-detran
 
 ## Show your support
